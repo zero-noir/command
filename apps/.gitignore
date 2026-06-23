@@ -1,0 +1,53 @@
+# Path-sensitive .gitignore for `apps/` directory
+# Targets `api/` (Python/FastAPI) and `web/` (Svelte)
+
+# ----- api/ (Python) -----
+api/__pycache__/
+api/**/*.py[cod]
+api/*$py.class
+api/*.so
+
+# Virtualenvs and env files for api
+api/venv/
+api/.venv/
+api/ENV/
+api/env/
+api/.env
+api/.env.*
+
+# Python tooling caches
+api/.pytest_cache/
+api/.mypy_cache/
+api/.pytype/
+api/.ruff_cache/
+
+# Coverage, DBs and logs
+api/.coverage
+api/coverage.xml
+api/htmlcov/
+api/*.db
+api/*.sqlite3
+api/logs/
+api/*.log
+
+# ----- web/ (Svelte / Node) -----
+web/node_modules/
+web/.svelte-kit/
+web/public/build/
+web/build/
+web/dist/
+web/.vite/
+web/.cache/
+
+# Environment and local overrides for web
+web/.env
+web/.env.*
+
+# IDE and OS
+web/.DS_Store
+web/Thumbs.db
+
+# Optional: lockfiles (if you want to ignore per-app lockfiles)
+# web/package-lock.json
+# web/yarn.lock
+# web/pnpm-lock.yaml

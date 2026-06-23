@@ -1,0 +1,116 @@
+# Production .gitignore for Python (FastAPI) + Svelte
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Installer logs
+pip-log.txt
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+venv*/
+
+# Python caches and tooling
+.pytest_cache/
+.mypy_cache/
+.pytype/
+.pyre/
+.ruff_cache/
+.cache/
+
+# Test / coverage
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+nosetests.xml
+*.cover
+.hypothesis/
+
+# Env files
+.env
+.env.*
+env.local
+/.env
+
+# SQLite
+*.db
+*.sqlite3
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Node / JS
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Vite / SvelteKit build
+.svelte-kit/
+build/
+dist/
+public/build/
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# Generated files
+*.tgz
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets and keys
+*.pem
+*.key
+secrets/
+
+# JetBrains
+/.idea/
+
+# Misc
+*.bak
+*.swp
+.cache/
+
+# Optional: lockfiles (if you prefer not to commit)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Ensure app source directories are not accidentally ignored
+!/apps/
+!/apps/**
+!/web/
+!/web/**
